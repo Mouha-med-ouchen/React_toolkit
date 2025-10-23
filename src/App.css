@@ -32,7 +32,43 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/* UserCard.css */
+
+/* Custom styling for a soft, elegant look */
+.user-card {
+  /* Soft background and border */
+  background-color: #f8f9fa;
+  /* Light grey/off-white */
+  border: 1px solid #dee2e6;
+  /* Subtle light border */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect: Slightly scales up and shadow becomes stronger */
+.user-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  /* Slight lift and scale */
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25) !important;
+  /* Stronger shadow */
+}
+
+/* Custom color for the name/title */
+.text-primary-emphasis {
+  color: #007bff !important;
+  /* A nice, soft blue */
+}
+
+/* Responsive adjustments (Bootstrap handles most of it, but this ensures good font sizing) */
+@media (max-width: 576px) {
+  .user-card {
+    padding: 3rem 1.5rem !important;
+    /* More generous vertical padding on small screens */
   }
 }
